@@ -82,6 +82,43 @@ If the AP is not near it, mode configuration is enabled and web portal is access
 
 Note : NanoC6 can be put in configuration mode by olding the button when the white light is ON at boot.
 
+--- 
+
+## 🌳 LED Behavior Decision Tree for NanoC6
+
+```
+                        🔵 Device Boot
+                              │
+                              v
+                    ⚪ LED: White (3 seconds)
+                              │
+                              v
+                   Is Button A stay pressed?
+                        /           \
+                       /             \
+                ⬅️ No                  Yes ➡️
+           🌈 LED Rainbow        🔵 LED Blue (WebUI configuration Mode)
+                  │
+                  v
+        Try connecting to Wi-Fi
+                  │
+                  v
+         Wi-Fi connection success?
+              /              \
+             /                \
+        ⬅️ No                   Yes ➡️
+ 🔵 LED Blue flashing ×3    🟩 LED Green (Honeypot Active)
+      then fix blue               │
+(WebUI configuration Mode)        |
+                                  v
+                       Incoming connection?
+                             /        \
+                            /          \
+                       ⬅️ No             Yes ➡️
+                    (Stay Green)   🔴 LED Red flashes ×2
+                                          then Red fixed
+```
+
 ---
 
 ## 📦 Dependencies

@@ -14,7 +14,7 @@ Thanks to hosseios for the video !
 ---
 
 Webui :  
-<img alt="WebUi" src="./WebUi.png" width="33%" height="33%"/>
+<img alt="WebUi" src="./WebUi-1.png" width="33%" height="33%"/>
 
 
 Alerts on Discord :   

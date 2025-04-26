@@ -19,6 +19,10 @@ Webui :
 
 Alerts on Discord :   
 <img alt="WebUi" src="./WebHookDiscord.jpg" width="33%" height="33%"/>
+
+
+5 days running with ELK collecting :   
+<img alt="ELK" src="./honeypot.png" width="100%" height="100%"/>
 </div>
 
 ---

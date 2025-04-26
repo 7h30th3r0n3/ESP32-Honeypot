@@ -16,6 +16,9 @@ Thanks to hosseios for the video !
 Webui :  
 <img alt="WebUi" src="./WebUi-1.png" width="33%" height="33%"/>
 
+What it look like for an attacker (Nmap scan):   
+<img alt="Nmap scan" src="./nmap.png" width="33%" height="33%"/>
+</div>
 
 Alerts on Discord :   
 <img alt="WebUi" src="./WebHookDiscord.jpg" width="33%" height="33%"/>
@@ -30,13 +33,16 @@ Alerts on Discord :
 ## ✅ Features
 
 - Interactive Telnet honeypot server on port 23
+- Fake file system structure with secrets to lure attackers
 - Realistic Linux shell simulation with multiple commands supported (pwd, whoami, cat, ls, cd, apt, etc.)
+ 
+- Banner grabbing for port 21,22,23,25,53,110,143,443,445,3306,3389,5900,8080
+
 - Automatic logging of all client inputs with timestamp and IP address
 - Webhooks for real-time alerts (Discord, Telegram, Signal, WhatsApp, SIEM, etc.)
 - Web-based configuration panel (SSID, password, webhook)
 - SPIFFS-based file system for persistent config and logs
 - Offline mode with Wi-Fi Access Point for initial setup
-- Fake file system structure with secrets to lure attackers
 - Modular code, compatible with any ESP32 board (no M5Stack dependency)
 
 ---
@@ -63,6 +69,19 @@ Tested and confirmed working on:
 6. All captured inputs will be logged and optionally sent to your webhook
 
 If the AP is not near it, mode configuration is enabled and web portal is accessible.
+
+Note : NanoC6 can be put in configuration mode by olding the button when the white light is ON at boot.
+
+---
+
+## 📦 Dependencies
+
+- ESPAsyncWebServer
+- ArduinoJson
+- SPIFFS (built-in)
+- WiFi (built-in)
+
+Make sure to install the required libraries via Library Manager or PlatformIO.
 
 ---
 
@@ -116,17 +135,6 @@ Privilege escalation:
 - sudo (with denial)
 
 Fake files like `/etc/passwd`, `secrets.txt`, `mysql_credentials.txt`, etc. are included to bait the attacker.
-
----
-
-## 📦 Dependencies
-
-- ESPAsyncWebServer
-- ArduinoJson
-- SPIFFS (built-in)
-- WiFi (built-in)
-
-Make sure to install the required libraries via Library Manager or PlatformIO.
 
 ---
 

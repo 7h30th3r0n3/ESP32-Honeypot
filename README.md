@@ -150,7 +150,7 @@ Fake files like `/etc/passwd`, `secrets.txt`, `mysql_credentials.txt`, etc. are 
 
 ## 🛡️ Usage Notes
 
-This honeypot is designed for educational and defensive cybersecurity purposes. Do not expose to the internet without proper upstream firewalling or network segmentation. It is not intended to replace full honeynet frameworks like Cowrie, but serves as a lightweight ESP32-based trap.
+This honeypot is designed for educational and defensive cybersecurity purposes. Do not expose to the internet without proper upstream firewalling or network segmentation. It is not intended to replace full honeynet frameworks like Cowrie, but serves as a lightweight ESP32-based trap canary.
 
 ---
 

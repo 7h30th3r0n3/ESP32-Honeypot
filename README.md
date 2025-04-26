@@ -135,9 +135,3 @@ This honeypot is designed for educational and defensive cybersecurity purposes. 
 ## 📄 License
 
 MIT License - Use freely with attribution.
-
----
-
-## 💡 Author
-
-Developed by 7h30th3r0n3 | Ethical Hacker & IoT Security Researcher

@@ -1,7 +1,10 @@
-## ESP32 Honeypot with Web UI, SPIFFS Persistence and Webhook Alerts
-
-This project is a standalone Telnet honeypot for the ESP32 platform. It emulates a realistic Linux shell environment to attract and analyze unauthorized access attempts. It features a full web-based configuration UI, persistent storage using SPIFFS, and webhook-based alerting that can be integrated with Discord, Telegram, Signal, WhatsApp, or SIEM platforms.
 <div align="center">
+
+## M5Stack NanoC6 ESP32 Honeypot
+
+<img alt="logo" src="./m5nanohoney.png" width="33%" height="33%"/>
+  
+This project is a standalone Multi-port honeypot for NanoC6 and ESP32 platform. It emulates a realistic Linux shell environment on telnet and multiple port banner to attract and analyze unauthorized access attempts. It features a full web-based configuration UI, persistent storage using SPIFFS, and webhook-based alerting that can be integrated with Discord, Telegram, Signal, WhatsApp, or SIEM platforms like ELK.
   
   Here the demo video on Evil-Cardputer:
   
@@ -11,21 +14,30 @@ This project is a standalone Telnet honeypot for the ESP32 platform. It emulates
 
 Thanks to hosseios for the video ! 
 
----
 
-Webui :  
-<img alt="WebUi" src="./WebUi-1.png" width="33%" height="33%"/>
+<table>
+  <tr>
+    <td align="center">
+      <strong>Web Interface (WebUI)</strong><br>
+      <img src="./WebUi-1.png" width="300px">
+    </td>
+    <td align="center">
+      <strong>What an Attacker Sees (Nmap Scan)</strong><br>
+      <img src="./nmap.png" width="900px">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <strong>Real-time Alerts on Discord</strong><br>
+      <img src="./WebHookDiscord.jpg" width="200px">
+    </td>
+    <td align="center">
+      <strong>5 Days of ELK Data Collection</strong><br>
+      <img src="./honeypot.png" width="900px">
+    </td>
+  </tr>
+</table>
 
-What it look like for an attacker (Nmap scan):   
-<img alt="Nmap scan" src="./nmap.png" width="33%" height="33%"/>
-</div>
-
-Alerts on Discord :   
-<img alt="WebUi" src="./WebHookDiscord.jpg" width="33%" height="33%"/>
-
-
-5 days running with ELK collecting :   
-<img alt="ELK" src="./honeypot.png" width="100%" height="100%"/>
 </div>
 
 ---
@@ -34,16 +46,13 @@ Alerts on Discord :
 
 - Interactive Telnet honeypot server on port 23
 - Fake file system structure with secrets to lure attackers
-- Realistic Linux shell simulation with multiple commands supported (pwd, whoami, cat, ls, cd, apt, etc.)
- 
-- Banner grabbing for port 21,22,23,25,53,110,143,443,445,3306,3389,5900,8080
-
+- Realistic Linux shell simulation with multiple commands supported (pwd, whoami, cat, ls, cd, apt, etc.)  
+- Banner grabbing for port 21,22,25,53,110,143,443,445,3306,3389,5900,8080  
 - Automatic logging of all client inputs with timestamp and IP address
 - Webhooks for real-time alerts (Discord, Telegram, Signal, WhatsApp, SIEM, etc.)
-- Web-based configuration panel (SSID, password, webhook)
+- Web-based configuration panel (SSID, password, port selection and webhook configuration)
 - SPIFFS-based file system for persistent config and logs
-- Offline mode with Wi-Fi Access Point for initial setup
-- Modular code, compatible with any ESP32 board (no M5Stack dependency)
+- Modular code, compatible with any ESP32 board
 
 ---
 ## 🧩 Compatible Devices
@@ -57,6 +66,7 @@ Tested and confirmed working on:
 - ✅ Any ESP32 Dev Board (e.g. DevKitC, NodeMCU-32S, Wemos D1 R32) [Buy here](https://s.click.aliexpress.com/e/_DEWPrnz)
 
 ---
+
 ## ⚙️ Installation
 
 1. Flash this firmware on any ESP32 using Arduino IDE or PlatformIO

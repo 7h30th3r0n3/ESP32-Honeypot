@@ -63,8 +63,9 @@ Tested and confirmed working on:
 - **M5Stack AtomS3**: [Buy here](https://s.click.aliexpress.com/e/_DnDXSKJ) or [Buy here](https://shop.m5stack.com/products/atoms3-dev-kit-w-0-85-inch-screen?ref=7h30th3r0n3)
 - **M5Stack Atom Lite**: [Buy here](https://s.click.aliexpress.com/e/_Dm0e95D)
 - **ESP32-C3** (with external antenna): [Buy here](https://s.click.aliexpress.com/e/_DD1yibp) (Be carefull to select sets WITH antenna) 
-- ✅ Any ESP32 Dev Board (e.g. DevKitC, NodeMCU-32S, Wemos D1 R32) [Buy here](https://s.click.aliexpress.com/e/_DEWPrnz)
 
+✅ Any ESP32 Dev Board should work (e.g. DevKitC, NodeMCU-32S, Wemos D1 R32) [Buy here](https://s.click.aliexpress.com/e/_DEWPrnz)  
+please report no working devices 
 ---
 
 ## ⚙️ Installation
